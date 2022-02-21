@@ -1,10 +1,1 @@
-import {terser} from 'rollup-plugin-terser'
-
-export default {
-  input: 'src/index.js',
-  output: [
-    {file: 'dist/common.js',format: 'cjs'},
-    {file: 'dist/common.min.js', format: 'cjs', plugins: [terser()]},
-    {file: 'dist/esm.min.js', format: 'esm', plugins: [terser()]}
-  ]
-};
+import{terser}from"rollup-plugin-terser";import typescript from"@rollup/plugin-typescript";let r=terser();export default{input:"src/index.ts",output:[{file:"dist/kitter.cjs.js",format:"cjs"},{file:"dist/kitter.cjs.min.js",format:"cjs",plugins:[r]},{file:"dist/kitter.es.js",format:"es"},{file:"dist/kitter.es.min.js",format:"es",plugins:[r]}],plugins:[typescript()]};

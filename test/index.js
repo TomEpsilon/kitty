@@ -1,3 +1,4 @@
-import {Kitter} from '../src/index.js'
+import {Kitter} from '../dist/kitter.es.min.js'
 let a = new Kitter()
-console.log(a.kitty.join(''));
+let b = new Kitter()
+console.log(Kitter.fuse(a, b));
